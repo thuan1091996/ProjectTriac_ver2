@@ -1,0 +1,36 @@
+RAM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+MA_7SEG                                                                           0x0160      10
+
+EEPROM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                                          Register  Size
+------------------------------------------------------------------------------------------------
+count                                                                             R4,R5        2
+T_delay                                                                           R6,R7        2
+T_shift_delay                                                                     R8,R9        2
+Status                                                                            R11          1
+Load                                                                              R12,R13      2
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+timer0_ovf_isr                                                                    0x00050     14
+timer1_capt_isr                                                                   0x0005E      5
+timer2_ovf_isr                                                                    0x00063     29
+ext_int0_isr                                                                      0x00080     11
+main                                                                              0x0008B      9
+INT0_INIT                                                                         0x00094      8
+Timer_INIT                                                                        0x0009C      9
+GPIO_INIT                                                                         0x000A5     12
+Wait_Shift                                                                        0x000B1     12
+Delay_100us                                                                       0x000BD     19
+CheckSW                                                                           0x000D0     32
+Display                                                                           0x000F0     48
+Power_Check                                                                       0x00120     32
+Disable_PWM                                                                       0x00140      5
+Enable_PWM                                                                        0x00145     25
